@@ -27,9 +27,9 @@ This project is a real-time chat application built using Socket.io, React, and E
 
 - Reconnection logic for handling disconnections
 
-File/image upload support (optional)
+- File/image upload support (optional)
 
-Project Structure
+## Project Structure
 socketio-chat/
 ├── client/
 │   ├── public/
@@ -44,7 +44,7 @@ socketio-chat/
 │   ├── package.json
 │   └── public/          # Static files (uploads, index.html)
 └── README.md
-Installation and Setup
+## Installation and Setup
 1. Server
 cd server
 npm install
