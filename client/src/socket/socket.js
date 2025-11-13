@@ -1,10 +1,9 @@
-// socket.js - Socket.io client setup
-
-import { io } from 'socket.io-client';
+import io from 'socket.io-client';
 import { useEffect, useState } from 'react';
 
-// Socket.io connection URL
-const SOCKET_URL = import.meta.env.VITE_SOCKET_URL || 'http://localhost:5000';
+// Socket.io connection URL - connect to the same origin, port 3000
+// This allows Socket.io to use WebSocket and polling without CORS issues
+const SOCKET_URL = import.meta.env.VITE_SOCKET_URL || `${window.location.protocol}//${window.location.hostname}:3000`;
 
 // Create socket instance
 export const socket = io(SOCKET_URL, {
